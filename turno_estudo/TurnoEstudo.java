@@ -1,3 +1,4 @@
+package turno_estudo;
 public class TurnoEstudo {
     private String turno;
 
