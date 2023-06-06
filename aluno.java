@@ -1,4 +1,4 @@
-public class Aluno {
+public class aluno {
 
     private String sexo;
     
@@ -10,16 +10,7 @@ public class Aluno {
         this.sexo = sexo;
     }    
     
-    public Aluno(String sexo) {
+    public aluno(String sexo) {
         this.sexo = sexo;
     }
-
-    public void fazerMatricula() {
-        System.out.println(nome + " fez sua matrícula na escola.");
-    }
-
-    public void cancelarMatricula() {
-        System.out.println(nome + " cancelou sua matrícula na escola.");
-    }
-    
 }
