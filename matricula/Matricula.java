@@ -34,6 +34,8 @@ public class Matricula {
             } else {
                 System.out.println("Não é possível adicionanr disciplinas");
             }
+        } else {
+            System.out.println("Disciplina não encontrada");
         }
 
         scanner.close();
