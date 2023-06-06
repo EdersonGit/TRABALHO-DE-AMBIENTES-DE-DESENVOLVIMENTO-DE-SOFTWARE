@@ -2,6 +2,8 @@ package matricula;
 
 import java.util.Scanner;
 
+import utils.Utils;
+
 public class Matricula {
 
     private String[] disciplinas;
@@ -27,7 +29,7 @@ public class Matricula {
         System.out.println("Digite o nome da disciplina na qual deseja se matricular.");
         String disciplina = scanner.nextLine();
 
-        if(verificarSeContemString(disciplinas, disciplina)) {
+        if(Utils.verificarSeContemString(disciplinas, disciplina)) {
             if(quantidadeDeDisciplinasSolicitadas < maximoDeSolicitacoes) {
                 solicitacoesDeMatricula[quantidadeDeDisciplinasSolicitadas] = disciplina;
                 System.out.println("Matrícula solicitada");
@@ -39,14 +41,5 @@ public class Matricula {
         }
 
         scanner.close();
-    }
-
-    public boolean verificarSeContemString(String[] vetor, String texto) {
-        for (int i = 0; i < vetor.length; i++) {
-            if (vetor[i].equals(texto)) {
-                return true;
-            }
-        }
-        return false;
     }
 }
