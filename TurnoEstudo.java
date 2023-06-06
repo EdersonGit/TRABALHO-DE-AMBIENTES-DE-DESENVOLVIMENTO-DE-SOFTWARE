@@ -1,7 +1,7 @@
-public class HorarioEstudo {
+public class TurnoEstudo {
     private String turno;
 
-    public HorarioEstudo(String turno) {
+    public TurnoEstudo(String turno) {
         this.turno = turno;
     }
 
