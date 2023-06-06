@@ -1,5 +1,7 @@
 import java.util.List;
 
+import matricula.Matricula;
+
 public class UniforOnline {
     public static void main(String[] args) {
     
@@ -30,7 +32,12 @@ public class UniforOnline {
 
         horario1.setTurno("Tarde");
         System.out.println("Novo horário de estudo 1: " + horario1.getTurno());
-        System.out.println("Novo horário de estudo 2: " + horario1.getTurno());   
+        System.out.println("Novo horário de estudo 2: " + horario1.getTurno()); 
+        
+        String[] disciplinas = {"Matemática", "Física", "Química", "Biologia"};
+        Matricula matricula = new Matricula(disciplinas);
+        matricula.listarDisciplinas();
+        matricula.matricular();  
     }
 
 }

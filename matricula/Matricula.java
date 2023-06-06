@@ -30,7 +30,7 @@ public class Matricula {
         if(verificarSeContemString(disciplinas, disciplina)) {
             if(quantidadeDeDisciplinasSolicitadas < maximoDeSolicitacoes) {
                 solicitacoesDeMatricula[quantidadeDeDisciplinasSolicitadas] = disciplina;
-                System.out.println("Matrícula solicitda");
+                System.out.println("Matrícula solicitada");
             } else {
                 System.out.println("Não é possível adicionanr disciplinas");
             }
