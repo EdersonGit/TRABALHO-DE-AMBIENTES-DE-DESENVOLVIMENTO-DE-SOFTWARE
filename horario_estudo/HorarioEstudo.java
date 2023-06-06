@@ -1,3 +1,4 @@
+package horario_estudo;
 public class HorarioEstudo {
     private String turno;
 

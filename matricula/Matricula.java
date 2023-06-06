@@ -1,7 +1,5 @@
 package matricula;
 
-import java.util.Scanner;
-
 import utils.Utils;
 
 public class Matricula {
@@ -23,11 +21,8 @@ public class Matricula {
         }
     }
 
-    public void matricular() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Digite o nome da disciplina na qual deseja se matricular.");
-        String disciplina = scanner.nextLine();
+    public void matricular(String disciplina) {
+        System.out.println("Realizando matrícula na disciplina " + disciplina);
 
         if(Utils.verificarSeContemString(disciplinas, disciplina)) {
             if(quantidadeDeDisciplinasSolicitadas < maximoDeSolicitacoes) {
@@ -39,7 +34,5 @@ public class Matricula {
         } else {
             System.out.println("Disciplina não encontrada");
         }
-
-        scanner.close();
     }
 }
