@@ -1,8 +1,8 @@
-package turno_estudo;
-public class TurnoEstudo {
+package horario_estudo;
+public class HorarioEstudo {
     private String turno;
 
-    public TurnoEstudo(String turno) {
+    public HorarioEstudo(String turno) {
         this.turno = turno;
     }
 
